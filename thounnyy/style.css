@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* swap means that it will swap the font if it is not available */
+@import url("https://fonts.googleapis.com/css?family=Domine:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border-box type is used to tell the browser to calculate size after included padding and border */
+    text-align: center;
+}
+
+html,
+body {
+    width: 100%;
+    height: 700vh !important;
+    font-family: "Roboto Mono", monospace;
+    /* if Roboto Mono is not available, use monospace */
+    text-transform: uppercase;
+}
+
+h1 {
+
+    font-family: 'Domine', sans-serif;
+    font-size: 10vw;
+    font-weight: 700;
+    line-height: 90%;
+    letter-spacing: 2px;
+    color: #ff9700;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.hero {
+    padding: 4em;
+    /* padding is inside the border margin is outside */
+    background: url("./assets/hero.jpg") no-repeat 50% 50%;
+    /* the third and forth arguments are the position of the center of the image */
+    background-size: cover;
+    /* em is relative to the font size of the element (or the parent by default) */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -119,6 +119,8 @@ img {
     text-align: right;
 }
 
+/* selector for specific element */
+
 .img-1,
 .img-2,
 .img-3 {
@@ -127,4 +129,19 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.img-2 {
+    clip-path: polygon(40% 25%, 60% 25%, 60% 75%, 40% 75%);
+    /* clip path is like a crop frame for element */
+    /* polygon is used to create a polygon shape take each argument as position */
+}
+
+.img-3 {
+    clip-path: polygon(50% 25%, 50% 25%, 50% 75%, 50% 75%);
+}
+
+.img-3 img {
+    transform-origin: top right;
+    transform: scale(3);
 }
